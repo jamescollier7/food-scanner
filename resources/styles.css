@@ -1,0 +1,87 @@
+@font-face {
+  font-family: "cal-reg";
+  src: url(champagne-and-limousines.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "cal-bold";
+  src: url(champagne-and-limousines.ttf) format("truetype");
+}
+
+body {
+  font-family: "cal-reg";
+  padding: 0px;
+  margin: 0px;
+}
+
+header {
+  font-family: "cal-bold";
+  font-weight: bolder;
+  font-size: 72px;
+  text-align: center;
+  color: #0079ff;
+  letter-spacing: 8px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+nav {
+  border-top: 2px solid #0079ff;
+  border-bottom: 2px solid #0079ff;
+}
+
+nav.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+nav ul li {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  list-style: none;
+  font-size: 26px;
+  text-decoration: none;
+  color: black;
+  letter-spacing: 1.5px;
+}
+
+nav ul li.active {
+  font-family: "cal-bold";
+  font-weight: bolder;
+  color: #0079ff;
+}
+
+nav ul li:hover {
+  font-family: "cal-bold";
+  font-weight: bolder;
+  color: #0079ff;
+  cursor: pointer;
+}
+
+footer {
+  border-top: 2px solid #0079ff;
+  background-color: #555;
+}
+
+.subpage {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 800px;
+}
