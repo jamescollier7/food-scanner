@@ -9,7 +9,7 @@
 }
 
 body {
-  font-family: "cal-reg";
+  font-family: Arial, Helvetica, sans-serif;
   padding: 0px;
   margin: 0px;
 }
@@ -51,6 +51,7 @@ nav ul {
 }
 
 nav ul li {
+  font-family: "cal-reg";
   padding-top: 20px;
   padding-bottom: 20px;
   list-style: none;
@@ -79,9 +80,55 @@ footer {
 }
 
 .subpage {
+  margin-top: 40px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 20px;
   padding-right: 20px;
   max-width: 800px;
+}
+
+.subpage h1 {
+  font-weight: 100;
+}
+
+.subpage h2 {
+  font-weight: 100;
+}
+
+img {
+  max-height: 150px;
+}
+
+.members {
+  display: flex;
+}
+
+.member {
+  border: 2px solid #0079ff;
+  border-radius: 6px;
+  padding: 15px;
+  margin: 15px;
+}
+
+.link {
+  text-decoration: none;
+  color: #0079ff;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.document-phase {
+  border: 2px solid #0079ff;
+  border-radius: 6px;
+  padding: 15px;
+  margin: 15px;
+}
+
+[href$=".pdf"]::after{
+  content: url("pdf-icon.jpg");
+  position: relative;
+  top: 6px;
+  left: 10px;
 }
