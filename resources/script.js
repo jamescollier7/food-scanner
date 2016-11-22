@@ -9,7 +9,6 @@ $(function () {
       contentLoad,
       stickyNavCheck,
       content = jQuery('#content'),
-      footer = jQuery('footer'),
       urlHash = window.location.hash.replace('#', ''),
       animDuration = 150,
       loadPathPrefix = 'subpages/',
@@ -41,12 +40,10 @@ $(function () {
     contentLoad = function (name) {
       jQuery('.active').removeClass('active');
       jQuery('nav ul li#' + name).addClass('active');
-      footer.fadeOut(animDuration);
       content.fadeOut(animDuration, function () {
         content.load('subpages/' + name + '.html', function () {
           window.location.hash = name;
           content.fadeIn(animDuration);
-          footer.fadeIn(animDuration);
         });
       });
     };
